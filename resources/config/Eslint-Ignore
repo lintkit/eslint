@@ -1,0 +1,10 @@
+app/*/Resources/Public/
+app/*/*/Resources/Public/
+*lib*
+*html*
+*vendor*
+*backup*
+*ci/*
+
+*build/dashboard*
+*snapshots*

@@ -1,6 +1,6 @@
 # action.yml
-name: "LintKit: JSLint"
-description: "An opinionated configuration to JavaScript and TypesScript files"
+name: "LintKit: ESLint"
+description: "An opinionated configuration to lint JavaScript and TypesScript files"
 branding:
   icon: 'check'
   color: 'blue'

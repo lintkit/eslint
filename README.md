@@ -1,6 +1,6 @@
-# LintKit: PHP Coding Standards
+# LintKit: ESLint
 
-An opinionated configuration of [eslint](https://eslint.org/).
+An opinionated configuration of [ESLint](https://eslint.org/).
 
 ## Usage
 

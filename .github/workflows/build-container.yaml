@@ -5,8 +5,8 @@ on:
     branches: ['main']
 
 env:
-  TITLE: "LintKit: JSLint"
-  DESCRIPTION: "An opinionated configuration to JavaScript and TypesScript files"
+  TITLE: "LintKit: ESLint"
+  DESCRIPTION: "An opinionated configuration to lint JavaScript and TypesScript files"
   REGISTRY: ghcr.io
 
 jobs:

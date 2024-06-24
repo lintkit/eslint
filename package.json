@@ -1,6 +1,6 @@
 {
   "name": "@lintkit/eslint-kit",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "LintKit: EsLint",
   "author": "Mike Street <mike@liquidlight.co.uk>",
   "license": "ISC",

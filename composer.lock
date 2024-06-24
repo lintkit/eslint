@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5defccf42d15258a6db1568d8cc74a66",
+    "content-hash": "117c225729d8554b4403f8198ff9fede",
     "packages": [
         {
             "name": "lintkit/base-kit",

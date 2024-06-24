@@ -17,6 +17,6 @@
         }
     },
     "bin": [
-        "bin/lintkit-eslintkit"
+        "bin/lintkit-eslint"
     ]
 }

@@ -49,5 +49,7 @@ jobs:
             org.opencontainers.image.description="${{ env.DESCRIPTION }}"
             org.opencontainers.image.vendor="LintKit"
             org.opencontainers.image.source="https://github.com/${{ github.repository }}"
+          build-args: |
+            ADDITIONAL_PACKAGES=npm
           tags: ${{ env.REGISTRY }}/${{ github.repository }}:latest
           push: true

@@ -1,17 +1,17 @@
 name: Create and publish a container
 
+env:
+  TITLE: "LintKit: ESLint"
+  REGISTRY: ghcr.io
+  IMAGE_NAME: ${{ github.repository }}
+  ADDITIONAL_PACKAGES: npm
+
 on:
   workflow_dispatch:
   push:
     branches:
       - 'main'
     tags:
-
-env:
-  TITLE: "LintKit: ESLint"
-  DESCRIPTION: "An opinionated configuration to lint JavaScript and TypesScript files"
-  REGISTRY: ghcr.io
-  IMAGE_NAME: ${{ github.repository }}
 
 jobs:
   create-docker-images:
@@ -47,6 +47,8 @@ jobs:
         uses: docker/metadata-action@9ec57ed1fcdbf14dcef7dfbe97b2010124a938b7
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+          labels: |
+            org.opencontainers.image.title=="${{ env.TITLE }}"
 
       - name: Build and push Docker image
         id: push
@@ -58,7 +60,7 @@ jobs:
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
           build-args: |
-            ADDITIONAL_PACKAGES=npm
+            ADDITIONAL_PACKAGES=${{ env.ADDITIONAL_PACKAGES || '' }}
 
       - name: Generate artifact attestation
         uses: actions/attest-build-provenance@v1

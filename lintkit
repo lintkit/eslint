@@ -6,7 +6,7 @@ include $_composer_autoload_path ?? __DIR__ . '/vendor/autoload.php';
 use Symfony\Component\Console\Application;
 use LintKit\EslintKit\Command\EslintKitCommand;
 
-$run = new EslintKitCommand(__DIR__);
+$run = new EslintKitCommand(getcwd());
 $application = new Application();
 $application->add($run);
 $application->setDefaultCommand($run->getName());

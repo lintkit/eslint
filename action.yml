@@ -6,4 +6,4 @@ branding:
   color: 'blue'
 runs:
   using: 'docker'
-  image: 'docker://ghcr.io/lintkit/eslint:latest'
+  image: 'docker://ghcr.io/lintkit/eslint-kit:latest'

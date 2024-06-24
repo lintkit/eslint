@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6fe72606e1dfa9f80d4e96a42044ba89",
+    "content-hash": "5defccf42d15258a6db1568d8cc74a66",
     "packages": [
         {
-            "name": "lintkit/base",
-            "version": "1.0.0",
+            "name": "lintkit/base-kit",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/lintkit/base.git",
-                "reference": "c2417d7c3aaeb3f7c644772ac3d0d9f53e4ba001"
+                "url": "https://github.com/lintkit/base-kit.git",
+                "reference": "4449a8c124aa2d39082f8141de846bf1675a0af8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lintkit/base/zipball/c2417d7c3aaeb3f7c644772ac3d0d9f53e4ba001",
-                "reference": "c2417d7c3aaeb3f7c644772ac3d0d9f53e4ba001",
+                "url": "https://api.github.com/repos/lintkit/base-kit/zipball/4449a8c124aa2d39082f8141de846bf1675a0af8",
+                "reference": "4449a8c124aa2d39082f8141de846bf1675a0af8",
                 "shasum": ""
             },
             "require": {
@@ -29,7 +29,7 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "LintKit\\Base\\": "src"
+                    "LintKit\\BaseKit\\": "src"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -40,9 +40,9 @@
                 }
             ],
             "support": {
-                "source": "https://github.com/lintkit/base/tree/1.0.0"
+                "source": "https://github.com/lintkit/base-kit/tree/1.1.0"
             },
-            "time": "2024-06-11T20:40:49+00:00"
+            "time": "2024-06-24T19:43:39+00:00"
         },
         {
             "name": "psr/container",

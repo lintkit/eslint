@@ -9,12 +9,14 @@
         }
     ],
     "require": {
-        "lintkit/base": "^1.0"
+        "lintkit/base-kit": "^1.1"
     },
-
     "autoload": {
         "psr-4": {
-            "LintKit\\Eslint\\": "src"
+            "LintKit\\EslintKit\\": "src"
         }
-    }
+    },
+    "bin": [
+        "bin/lintkit-eslintkit"
+    ]
 }

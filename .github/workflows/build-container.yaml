@@ -12,6 +12,7 @@ on:
     branches:
       - 'main'
     tags:
+      - '*'
 
 jobs:
   create-docker-images:
@@ -44,7 +45,7 @@ jobs:
 
       - name: Extract metadata (tags, labels) for Docker
         id: meta
-        uses: docker/metadata-action@9ec57ed1fcdbf14dcef7dfbe97b2010124a938b7
+        uses: docker/metadata-action@v5
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
           labels: |
@@ -53,6 +54,9 @@ jobs:
             # set latest tag for default branch
             type=raw,value=latest,enable={{ is_default_branch }}
             type=sha,enable=false
+            type=semver,pattern={{version}}
+            type=semver,pattern={{major}}.{{minor}}
+            type=semver,pattern={{major}}
 
       - name: Build and push Docker image
         id: push
@@ -60,7 +64,7 @@ jobs:
         with:
           push: true
           context: ${{ github.workspace }}
-          file: ${{ github.workspace }}/vendor/lintkit/base/Dockerfile
+          file: ${{ github.workspace }}/vendor/lintkit/base-kit/Dockerfile
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
           build-args: |

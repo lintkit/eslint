@@ -1,13 +1,13 @@
 <?php
 
-namespace LintKit\Eslint\Command;
+namespace LintKit\EslintKit\Command;
 
-use LintKit\Base\Command\Base;
+use LintKit\BaseKit\Command\Base;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
-class EslintCommand extends Base
+class EslintKitCommand extends Base
 {
 	protected function configure(): void
 	{

@@ -1,5 +1,5 @@
 {
-    "name": "lintkit/eslint",
+    "name": "lintkit/eslint-kit",
     "type": "library",
     "version": "0.1.0",
     "authors": [
